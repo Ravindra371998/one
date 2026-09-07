@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexus · friendly shop</title>
+  <title>Nexus · Warm & Friendly</title>
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Quicksand', sans-serif;
-      background: #f0f3f8;
-      color: #1e293b;
+      font-family: 'Nunito', sans-serif;
+      background: #faf6f0;
+      color: #2d1b0e;
       padding: 20px;
     }
     .container {
@@ -22,9 +22,9 @@
       margin: 0 auto;
     }
 
-    /* header - friendly */
+    /* header - warm & friendly */
     .header {
-      background: white;
+      background: #ffffff;
       border-radius: 28px;
       padding: 14px 28px;
       display: flex;
@@ -32,21 +32,21 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 14px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-      border: 1px solid #e9edf3;
+      box-shadow: 0 4px 20px rgba(180, 120, 80, 0.06);
+      border: 1px solid #f0e4d8;
       margin-bottom: 28px;
     }
     .brand {
-      font-weight: 700;
+      font-weight: 800;
       font-size: 24px;
       display: flex;
       align-items: center;
       gap: 10px;
-      color: #0f172a;
+      color: #2d1b0e;
       text-decoration: none;
     }
-    .brand i { color: #8b5cf6; font-size: 28px; }
-    .brand span { color: #8b5cf6; }
+    .brand i { color: #e07c4a; font-size: 28px; }
+    .brand span { color: #e07c4a; }
 
     .header-actions {
       display: flex;
@@ -57,16 +57,16 @@
     .search-box {
       display: flex;
       align-items: center;
-      background: #f1f5f9;
+      background: #f5ede6;
       border-radius: 60px;
       padding: 2px 2px 2px 18px;
       border: 1px solid transparent;
       transition: 0.2s;
     }
     .search-box:focus-within {
-      border-color: #8b5cf6;
-      background: white;
-      box-shadow: 0 0 0 4px rgba(139,92,246,0.08);
+      border-color: #e07c4a;
+      background: #ffffff;
+      box-shadow: 0 0 0 4px rgba(224, 124, 74, 0.10);
     }
     .search-box input {
       border: none;
@@ -77,9 +77,9 @@
       outline: none;
       font-family: inherit;
     }
-    .search-box input::placeholder { color: #94a3b8; }
+    .search-box input::placeholder { color: #a68b7a; }
     .search-box button {
-      background: #8b5cf6;
+      background: #e07c4a;
       border: none;
       width: 42px;
       height: 42px;
@@ -88,28 +88,28 @@
       cursor: pointer;
       transition: 0.2s;
     }
-    .search-box button:hover { background: #7c3aed; transform: scale(0.95); }
+    .search-box button:hover { background: #cc6a3a; transform: scale(0.95); }
 
     .cart-btn {
-      background: #ede9fe;
+      background: #f5ede6;
       border: none;
       width: 50px;
       height: 50px;
       border-radius: 50px;
       display: grid;
       place-items: center;
-      color: #8b5cf6;
+      color: #e07c4a;
       font-size: 20px;
       cursor: pointer;
       position: relative;
       transition: 0.2s;
     }
-    .cart-btn:hover { background: #ddd6fe; }
+    .cart-btn:hover { background: #ecddd2; }
     .cart-badge {
       position: absolute;
       top: -2px;
       right: -2px;
-      background: #ef4444;
+      background: #e07c4a;
       color: white;
       font-size: 11px;
       font-weight: 700;
@@ -138,39 +138,40 @@
       gap: 22px;
     }
     .product-card {
-      background: white;
+      background: #ffffff;
       border-radius: 24px;
       overflow: hidden;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
-      border: 1px solid #eef2f6;
+      box-shadow: 0 4px 16px rgba(180, 120, 80, 0.04);
+      border: 1px solid #f0e4d8;
       transition: 0.25s ease;
       display: flex;
       flex-direction: column;
     }
     .product-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.04);
-      border-color: #d5dbe6;
+      box-shadow: 0 20px 40px rgba(180, 120, 80, 0.08);
+      border-color: #e0cbbc;
     }
     .product-card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
-      background: #f8fafc;
+      background: #faf6f0;
     }
     .product-body {
       padding: 14px 14px 6px;
       flex: 1;
     }
     .product-body .title {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 15px;
       margin-bottom: 2px;
+      color: #2d1b0e;
     }
     .product-body .category {
       font-size: 12px;
-      color: #64748b;
-      background: #f1f5f9;
+      color: #8b6f5c;
+      background: #f5ede6;
       display: inline-block;
       padding: 2px 12px;
       border-radius: 40px;
@@ -183,17 +184,18 @@
       flex-wrap: wrap;
     }
     .price-current {
-      font-weight: 700;
+      font-weight: 800;
       font-size: 18px;
+      color: #2d1b0e;
     }
     .price-old {
-      color: #94a3b8;
+      color: #b5957e;
       text-decoration: line-through;
       font-size: 14px;
     }
     .rating {
       margin-left: auto;
-      color: #f59e0b;
+      color: #f5a623;
       font-size: 13px;
       display: flex;
       align-items: center;
@@ -206,12 +208,12 @@
     }
     .btn-add {
       flex: 1;
-      background: #0f172a;
+      background: #2d1b0e;
       color: white;
       border: none;
       padding: 10px 8px;
       border-radius: 40px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 13px;
       cursor: pointer;
       transition: 0.2s;
@@ -221,14 +223,14 @@
       gap: 6px;
       font-family: inherit;
     }
-    .btn-add:hover { background: #8b5cf6; }
+    .btn-add:hover { background: #e07c4a; }
     .btn-buy {
-      background: #8b5cf6;
+      background: #e07c4a;
       color: white;
       border: none;
       padding: 10px 14px;
       border-radius: 40px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 13px;
       cursor: pointer;
       transition: 0.2s;
@@ -238,68 +240,70 @@
       font-family: inherit;
       white-space: nowrap;
     }
-    .btn-buy:hover { background: #7c3aed; }
+    .btn-buy:hover { background: #cc6a3a; }
     .btn-wish {
       background: transparent;
-      border: 1px solid #eef2f6;
+      border: 1px solid #f0e4d8;
       border-radius: 40px;
       width: 44px;
       display: grid;
       place-items: center;
       cursor: pointer;
-      color: #94a3b8;
+      color: #b5957e;
       transition: 0.2s;
     }
-    .btn-wish:hover { background: #f1f5f9; color: #ef4444; border-color: #ef4444; }
+    .btn-wish:hover { background: #f5ede6; color: #e07c4a; border-color: #e07c4a; }
 
-    /* sidebar - friendly cart */
+    /* sidebar - warm cart */
     .sidebar {
-      background: white;
+      background: #ffffff;
       border-radius: 28px;
       padding: 24px 20px;
-      border: 1px solid #eef2f6;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+      border: 1px solid #f0e4d8;
+      box-shadow: 0 4px 16px rgba(180, 120, 80, 0.04);
       height: fit-content;
       position: sticky;
       top: 20px;
     }
     .sidebar h3 {
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 800;
       display: flex;
       align-items: center;
       gap: 10px;
       margin-bottom: 16px;
       padding-bottom: 12px;
-      border-bottom: 2px solid #f1f5f9;
+      border-bottom: 2px solid #f5ede6;
+      color: #2d1b0e;
     }
-    .sidebar h3 i { color: #8b5cf6; }
+    .sidebar h3 i { color: #e07c4a; }
 
     .cart-item {
       display: flex;
       align-items: center;
       gap: 12px;
       padding: 10px 0;
-      border-bottom: 1px solid #f1f5f9;
+      border-bottom: 1px solid #f5ede6;
     }
     .cart-item img {
       width: 48px;
       height: 48px;
       border-radius: 14px;
       object-fit: cover;
-      background: #f8fafc;
+      background: #faf6f0;
     }
     .cart-item .info {
       flex: 1;
     }
     .cart-item .info .name {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 14px;
+      color: #2d1b0e;
     }
     .cart-item .info .price {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 14px;
-      color: #0f172a;
+      color: #e07c4a;
     }
     .cart-item .qty {
       display: flex;
@@ -307,7 +311,7 @@
       gap: 4px;
     }
     .cart-item .qty button {
-      background: #f1f5f9;
+      background: #f5ede6;
       border: none;
       width: 28px;
       height: 28px;
@@ -316,38 +320,39 @@
       font-weight: 700;
       transition: 0.2s;
       font-size: 16px;
-      color: #0f172a;
+      color: #2d1b0e;
     }
-    .cart-item .qty button:hover { background: #ede9fe; color: #8b5cf6; }
+    .cart-item .qty button:hover { background: #ecddd2; color: #e07c4a; }
     .cart-item .qty span {
-      font-weight: 600;
+      font-weight: 700;
       min-width: 20px;
       text-align: center;
     }
     .cart-item .remove {
       background: transparent;
       border: none;
-      color: #94a3b8;
+      color: #b5957e;
       cursor: pointer;
       padding: 4px 8px;
       border-radius: 8px;
       transition: 0.2s;
     }
-    .cart-item .remove:hover { background: #fee2e2; color: #ef4444; }
+    .cart-item .remove:hover { background: #fee2e2; color: #e07c4a; }
 
     .cart-total {
       margin-top: 16px;
       padding-top: 16px;
-      border-top: 2px solid #f1f5f9;
+      border-top: 2px solid #f5ede6;
       display: flex;
       justify-content: space-between;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 20px;
+      color: #2d1b0e;
     }
     .checkout-btn {
       width: 100%;
       margin-top: 16px;
-      background: #0f172a;
+      background: #2d1b0e;
       color: white;
       border: none;
       padding: 14px;
@@ -362,10 +367,10 @@
       gap: 10px;
       font-family: inherit;
     }
-    .checkout-btn:hover { background: #8b5cf6; }
+    .checkout-btn:hover { background: #e07c4a; }
     .empty-cart {
       text-align: center;
-      color: #94a3b8;
+      color: #b5957e;
       padding: 24px 0;
     }
     .empty-cart i { font-size: 36px; opacity: 0.3; margin-bottom: 8px; }
@@ -375,12 +380,12 @@
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: #0f172a;
+      background: #2d1b0e;
       color: white;
       padding: 14px 28px;
       border-radius: 60px;
-      font-weight: 500;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      font-weight: 600;
+      box-shadow: 0 8px 32px rgba(45, 27, 14, 0.15);
       opacity: 0;
       transform: translateY(20px);
       transition: 0.3s ease;
@@ -426,8 +431,8 @@
     <!-- products -->
     <section>
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
-        <h2 style="font-weight:700; font-size:24px;">✨ Featured</h2>
-        <span style="color:#64748b; font-size:14px;" id="productCount">8 items</span>
+        <h2 style="font-weight:800; font-size:24px; color:#2d1b0e;">☕ Handpicked</h2>
+        <span style="color:#8b6f5c; font-size:14px;" id="productCount">8 items</span>
       </div>
       <div class="product-grid" id="productsGrid"></div>
     </section>
